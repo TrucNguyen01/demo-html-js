@@ -1,0 +1,64 @@
+/* Thiết lập cho nav */
+.navbar {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: #041434;
+    height: 100%;
+    color: #869AB8;
+    font-size: 14px;
+    padding: 20px 12px;
+}
+
+.navbar .navbar-top {
+    height: 90%;
+    width: 100%;
+}
+
+/* Căn ngang nav */
+.navbar .navbar-top > div,
+.navbar .navbar-bottom > div{
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    height: 36px;
+    width: 176px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+/* Thiết lập khi hover */
+.navbar .navbar-top > div:hover,
+.navbar .navbar-bottom > div:hover {
+    background: rgba(167, 196, 255, 0.16);
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.navbar .navbar-top > div:hover .icon,
+.navbar .navbar-bottom > div:hover .icon {
+    filter: invert(100%) sepia(0%) saturate(7474%) hue-rotate(57deg) brightness(2000%) contrast(106%);
+}
+.navbar .icon {
+    margin: 0 12px;
+}
+
+/* Thiết lập kiểu chữ cho nav */
+.navbar .navbar-title {
+    font-family: notosans-semibol;
+    font-weight: 500;
+}
+
+/* khi đc active */
+.is-active {
+    background: rgba(167, 196, 255, 0.16);
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.is-active-icon {
+    filter: invert(100%) sepia(0%) saturate(7474%) hue-rotate(57deg) brightness(2000%) contrast(106%);
+}
+
+
+.navbar-under {
+   color: white;
+   margin-top: 10px;
+} 

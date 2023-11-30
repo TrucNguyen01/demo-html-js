@@ -1,0 +1,98 @@
+.show-employee {
+    z-index: 999;
+}
+/* Thiết lập cho phần header form chi tiết nhân viên */
+.detail-employee .detail-employee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Phần bên trái của header form */
+.detail-employee .detail-employee-header .employee-header-left{
+    display: flex;
+}
+.detail-employee .detail-employee-header .employee-header-left > div {
+    align-items: center;
+    display: flex;
+}
+.detail-employee .detail-employee-header .employee-header-left div .input-checkbox {
+    margin: 0 10px 0 20px;
+}
+/* Phần bên phải của header form */
+.detail-employee .detail-employee-header .employee-header-right {
+    display: flex;
+}
+.employee-header-right div {
+    margin-left: 15px;
+}
+
+/* Thiết lập css cho phần main */
+.detail-employee-main > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-employee-main input {
+    width: 100%;
+}
+.detail-employee div .row11,
+.detail-employee div .row21
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-employee div .row21 div {
+    width: 49%;
+}
+.detail-employee div .row11 .customername {
+    width: 56%;
+}
+.detail-employee div .row11 .customerCode {
+    width: 42%;
+}
+.detail-employee-main .row1-left,
+.detail-employee-main .row1-right {
+    width: 49%;
+}
+.list-gender {
+    display: flex;
+}
+.detail-employee-main .gender input,
+.detail-employee-main .gender p
+ {
+    width: 30px;
+    margin-right: 6px;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+.detail-employee-main .gender input {
+    flex-shrink: 0;
+}
+.detail-employee-main .gender p {
+    margin-right: 24px;
+}
+
+.detail-employee-main .row4 div,
+.detail-employee-main .row5 div {
+    width: 100%;
+}
+
+.detail-employee-main .row4 input,
+.detail-employee-main .row5 input {
+    width: 100%;
+}
+
+/* css cho footer */
+.detail-employee-footer {
+    background: #eeee;
+    height: 60px;
+}
+.detail-employee .m-button-cancel {
+    background: white;
+}
+
+

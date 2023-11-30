@@ -1,0 +1,73 @@
+.content {
+    width: calc(100% - 200px);
+    padding: 0 24px;
+    background: #EEEFF1;
+}
+.content-header {
+    padding: 20px 0 19px 0;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header .content-title {
+    font-size: 24px;
+    font-family: notosans-bold;
+    font-weight: 700;
+    color: #1F1F20;
+}
+.content-header .button-icon {
+    height: 36px;
+    min-width: 116px;
+    right: 24px;
+}
+
+/* Thiết lập cho table */
+.content-main {
+    background: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.content-main table {
+    width: 100%;
+}
+.content-main .tbl-header .tbl-header-employee{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.tbl-header-employee .tbl-header-left {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.tbl-header-employee .button-icon{
+    position: absolute;
+    left: 180px;
+} 
+.tbl-header-employee .tbl-header-right{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    margin-left: 90%;
+}
+
+
+/* icon reload */
+.content-main .tbl-header .icon-reload,
+.content-main .tbl-header .icon-file
+ {
+    height: 36px;
+    width: 36px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Thiết lập cho giá trị trong table */

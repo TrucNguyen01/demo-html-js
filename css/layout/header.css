@@ -1,0 +1,61 @@
+/* Thiết lập cho header bên trái */
+.header-left {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+/* icon toggle */
+.header-left .icon-toggle {
+    margin: 0 16px;
+    filter: invert(0%) sepia(93%) saturate(27%) hue-rotate(98deg) brightness(0%) contrast(106%);
+}
+
+/* name company */
+.header-left .name {
+    color: white;
+    font-family: notosans-bold;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+/* Thiết lập cho header right */
+.header-right {
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Thiết lập cho phần header right đầu */
+.header-right .header-right-start {
+    display: flex;
+    align-items: center;
+}
+
+/* icon bars */
+.header-right .header-right-start .icon-bars {
+    margin: 0 24px 0 14px;
+}
+
+/* name company header right */
+.header-right .header-right-start .name-company {
+    font-family: notosans-bold;
+}
+/* Thiết lập cho phần header cuối */
+.header-right .header-right-end {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+.header-right .header-right-end .icon-user {
+    margin: 0 20px;
+}
+.header-right .header-right-end .icon-down-small {
+    margin-right: 20px;
+}
+
+

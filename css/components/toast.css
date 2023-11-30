@@ -1,0 +1,42 @@
+/* Thiết lập cho toast */
+.m-toast {
+    position: absolute;
+    right: 24px;
+    bottom: 100px;
+    height: 56px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 4px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 1px 1px #e0e0e0;
+    margin-top: 10px;
+}
+
+/* Bên trái toast */
+.m-toast-left {
+    display: flex;
+    align-items: center;
+}
+.m-toast-left .icon {
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+.m-toast-content {
+    text-align: left;
+}
+
+.add-customer-success {
+    bottom: 100px;
+}
+
+.load-data-success {
+    bottom: 160px;
+}
+
+.delete-data {
+    bottom: 220px;
+}

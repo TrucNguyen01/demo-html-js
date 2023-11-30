@@ -1,0 +1,51 @@
+@import url(./components/button.css);
+@import url(./components/input.css);
+@import url(./components/combobox.css);
+@import url(./components/dialog.css);
+@import url(./layout/header.css);
+@import url(./layout/navbar.css);
+@import url(./layout/content.css);
+@import url(./components/date.css);
+@import url(./components/dropdownlist.css);
+@import url(./components/label.css);
+@import url(./components/icon.css);
+@import url(./components/table.css);
+@import url(./pages/employee.css);
+@import url(./components/form.css);
+@import url(./components/paging.css);
+@import url(./components/toast.css);
+@import url(./components/loading.css);
+
+@font-face {
+    font-family: notosans-bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+@font-face {
+    font-family: notosans-italic;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+@font-face {
+    font-family: notosans-regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+    font-family: notosans-semibol;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: notosans-regular;
+}
+.header {
+    height: 56px;
+    display: flex;
+    background-color: #FFFFFF;
+}
+.main {
+    display: flex;
+    height: calc(100vh - 56px);
+}

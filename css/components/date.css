@@ -1,0 +1,25 @@
+/* Thiết lập cho date */
+.m-date {
+    height: 36px;
+    width: 140px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 10px 0 9px 12px;
+    border: 1px solid #E0E0E0;
+    background: #ffffff;
+    outline: none;
+}
+.m-date::placeholder {
+    color: #9E9E9E;
+}
+/* Thiết lập cho date form */
+.m-date-form {
+    width: 260px;
+    padding: 10px 0 9px 12px;
+}
+.m-date-form::placeholder {
+    font-size: 14px;
+}
+.m-input-error {
+    border: 1px solid #E61D1D;
+}

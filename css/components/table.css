@@ -1,0 +1,64 @@
+/* Thiết lập scroll cho table */
+.table-employee {
+    width: 100%;
+    height: calc(100vh - 258px);
+    overflow: auto;
+    color: #000000;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+/* Thiết lập cho table */
+.m-table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Fixed header của table */
+.m-table thead tr th{
+    background-color: #F5F5F5;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-weight: 500;
+    font-family: notosans-semibol;
+}
+.m-table thead tr th, .m-table tbody tr td {
+    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    padding-left: 15px;
+}
+.m-table thead tr th:nth-child(2), .m-table tbody tr td:nth-child(2) {
+    height: 48px;
+}
+.m-table thead tr th:nth-child(1), .m-table tbody tr td:nth-child(1) {
+    height: 48px;
+    padding-left: unset;
+    width: 50px;
+}
+.m-table thead tr th:first-child, .m-table tbody tr td:first-child {
+    text-align: center;
+}
+
+.isSelected {
+    background-color: darkgrey;
+}
+
+.input-checkbox, 
+.m-table thead tr th{
+    pointer-events: none;
+}
+.m-table thead tr th:first-child {
+    pointer-events: unset;
+}
+
+.m-table tbody tr{
+    cursor: pointer;
+}
+
+.m-table tbody tr{
+    cursor: pointer;
+}
+
+

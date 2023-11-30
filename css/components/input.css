@@ -1,0 +1,85 @@
+/* Thiết lập cho input */
+.m-input {
+    height: 24px;
+    width: 175px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+    padding: 7px 0 8px 7px;
+    background: #FFFFFF;
+}
+
+/* Thiết lập khi hover vào input */
+.m-input:hover {
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+/* Thiết lập cho placeholder input */
+.m-input::placeholder {
+    font-size: 8px;
+    font-weight: 400;
+    align-items: center;
+    font-size: 8px;
+    color: #9E9E9E;
+}
+/* Thiết lập khi focus vào input */
+.m-input:focus {
+    border: 1px solid #50B83C;
+}
+
+/* Thiết lập khi lỗi input */
+.m-input-error {
+    border: 1px solid #E61D1D;
+}
+
+
+/* Thiết lập cho input icon */
+.input-icon {
+    position: absolute;
+    width: 280px;
+}
+.icon-search {
+    position: absolute;
+    height: 16px;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+}
+.m-input-icon {
+    height: 36px;
+    width: 280px;
+    padding: 8px 0 9px 12px;
+}
+.m-input-icon::placeholder {
+    font-size: 14px;
+}
+
+/* Thiết lập cho input form */
+.m-input-form {
+    height: 36px;
+    width: 260px;
+    padding: 10px 0 9px 12px;
+}
+.m-input-form::placeholder {
+    font-size: 14px;
+}
+
+/* Thiết lập cho input radio form */
+.input-radio {
+    height: 20px;
+    width: 20px;
+    color: #FFFFFF;
+    border: 2px solid #707070;
+}
+
+/* Thiết lập cho input checkbox form */
+.input-checkbox,
+.input-checkbox-header {
+    height: 18px;
+    width: 18px;
+    color: #FFFFFF;
+    border: 1px solid #707070;
+}
+

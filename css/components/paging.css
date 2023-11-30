@@ -1,0 +1,53 @@
+/* Thiết lập cho paging */
+.m-paging {
+    height: 56px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Thiết lập cho paging left */
+.m-paging .m-paging-left {
+    margin-left: 16px;
+}
+
+/* Thiết lập cho paging right */
+.m-paging .m-paging-right {
+    display: flex;
+    align-items: center;
+}
+
+.m-paging .m-paging-right .quantity-record {
+    margin-right: 40px;
+}
+.m-paging .m-paging-right .page-number {
+    display: flex;
+}
+.m-paging .m-paging-right div {
+    margin-right: 16px;
+}
+
+.m-paging .m-paging-right .pagination {
+    padding: 0 50px;
+}
+.m-paging .m-paging-right .pagination button {
+    height: 32px;
+    width: 32px;
+    margin: 0 4px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid gainsboro;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.icon-paging {
+    border: none;
+    cursor: pointer;
+}
+
+.icon-paging-none {
+    cursor: default;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(109%) contrast(92%);
+}

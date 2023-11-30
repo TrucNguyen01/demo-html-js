@@ -1,0 +1,19 @@
+/* Thiết lập cho thẻ label */
+.m-label {
+    color: #1F1F1F;
+    font-weight: 500;
+    font-family: notosans-semibol;
+    display: block;
+}
+
+/* Thiết lập cho label text filed */
+.m-label-text-filed {
+    font-size: 9px;
+    margin-bottom: 6px;
+}
+
+/* Thiết lập cho label form */
+.m-label-form {
+    font-size: 14px;
+    margin: 22px 0 8px;
+}

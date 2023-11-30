@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Demo HTML / CSS</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="icon icon-toggle"></div>
+            <div class="icon-logo-1"></div>
+        </div>
+        <div class="header-right">
+            <div class="header-right-start">
+                <div class="icon icon-bars"></div>
+                <div class="name-company">
+                    CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC
+                </div>
+                <div class="icon icon-down-small"></div>
+            </div>
+            <div class="header-right-end">
+                <div class="icon icon-bell"></div>
+                <div class="icon icon-user"></div>
+                <div class="name">Nguyễn Văn Trúc</div>
+                <div class="icon icon-down-small"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="navbar-top">
+                <div>
+                    <div class="icon icon-overview"></div>
+                    <div class="navbar-title">Trang chủ</div>
+                </div>
+                <div>
+                    <div class="icon icon-analysis"></div>
+                    <div class="navbar-title">Báo cáo</div>
+                </div>
+                <div class="is-active">
+                    <div class="icon icon-customer is-active-icon"></div>
+                    <div class="navbar-title">Khách hàng</div>
+                </div>
+                <div>
+                    <div class="icon icon-setting"></div>
+                    <div class="navbar-title">Cài đặt</div>
+                </div>
+            </div>
+            <div class="navbar-bottom">
+                <hr class="under">
+                <div class="navbar-under">
+                    <div class="icon icon-prev"></div>
+                    <div>Thu gọn</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <div class="content-title">
+                    Quản lý khách hàng
+                </div>
+                <div class="button-icon">
+                    <!-- <button class="m-button m-button-success  btn-add-employee">Thêm mới nhân viên</button> -->
+                    <button class="m-button m-button-success  btn-add-customer">Thêm mới</button>
+                    <div class="icon icon-plus-small"></div>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="tbl-header">
+                    <div class="tbl-header-employee">
+                        <div class="tbl-header-left">
+                            <div>Đã chọn <strong class="number-records"></strong></div>
+                            <p class="clear-selected" style="color: red; margin-left: 20px; cursor: pointer;">Bỏ chọn</p>
+                            <div class="button-icon">
+                                <button class="m-button m-button-cancel delete-all">Xoá tất cả</button>
+                                <div style="top: 7px;" class="icon icon-close"></div>
+                            </div>
+                        </div>
+                        <div class="tbl-header-right">
+                            <div class="icon icon-file"></div>
+                            <div class="load-data icon icon-reload"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-employee">
+                    <table class="m-table tbl-employee">
+                        <thead>
+                            <tr>
+                                <th><input class="input-checkbox th" type="checkbox"/></th>
+                                <th>Mã khách hàng</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th>Ngày sinh</th>
+                                <th>Công ty</th>
+                                <th>Dư nợ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="m-paging">
+                    <div class="m-paging-left">
+                        <p>Tổng : <strong class="total"></strong></p>
+                    </div>
+                    <div class="m-paging-right">
+                        <div>Số bản ghi / trang</div>
+                        <div class="quantity-record">
+                            <select class="m-dropdownlist m-dropdownlist-table">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="pagination"></div>
+                        <div class="page-number">
+                            <div class="page-after"></div>
+                            <div class="page-before"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Form chi tiết nhân viên -->
+    <div class="show-customer"  style="display: none;">
+        <div class="m-form detail-employee">
+            <div class="form-header detail-employee-header">
+                <div class="employee-header-left">
+                    <div class="form-title detail-employee-title">Thông tin khách hàng</div>
+                </div>
+                <div class="employee-header-right">
+                    <div class="icon icon-close"></div>
+                </div>
+            </div>
+            <div class="form-main detail-employee-main">
+                <div class="row1">
+                    <div class="row1-left">
+                        <div class="row11">
+                            <div class="customerCode">
+                                <label class="m-label m-label-form" for="customerCode">Mã khách hàng<i class="required">*</i></label>
+                                <input required type="text" class="m-input-form m-input" name="code" id="customerCode"/>
+                            </div>
+                            <div class="customername">
+                                <label class="m-label m-label-form" for="customerName">Họ và tên<i class="required">*</i></label>
+                                <input required type="text" class="m-input-form m-input" name="name" id="customerName"/>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <label class="m-label m-label-form" for="customerPhoneNumber">Số điện thoại</label>
+                            <input type="text" class="m-input-form m-input" name="phone" id="customerPhoneNumber"/>
+                        </div>
+                        <div class="email">
+                            <label class="m-label m-label-form" for="customerEmail">Email</label>
+                            <input type="text" class="m-input-form m-input" name="email" id="customerEmail"/>
+                        </div>
+                    </div>
+                    <div class="row1-right">
+                        <div class="row21">
+                            <div class="dateofbirth">
+                                <label class="m-label m-label-form" for="date">Ngày sinh</label>
+                                <input date type="date" class="m-date m-date-form" name="date" id="dateOfBirth"/>
+                            </div>
+                            <div class="gender">
+                                <label class="m-label m-label-form" for="gender">Giới tính</label>
+                                <div class="list-gender">
+                                    <input checked type="radio" class="input-radio" name="gender" value="0"/><p>Nam</p>
+                                    <input type="radio" class="input-radio" name="gender" value="1"/><p>Nữ</p>
+                                    <input type="radio" class="input-radio" name="gender" value="2"/><p>Khác</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row21">
+                            <div class="id-card">
+                                <label class="m-label m-label-form" title="Số chứng minh nhân dân" for="idCard">Số CMND</label>
+                                <input type="text" class="m-input-form m-input" name="cmnd" id="idCard"/>
+                            </div>
+                            <div class="date-range">
+                                <label class="m-label m-label-form" for="dateRange">Ngày cấp</label>
+                                <input date type="date" class="m-date m-date-form" name="date-range" id="dateRange"/>
+                            </div>
+                        </div>
+                        <div class="place-of-issuance">
+                            <label class="m-label m-label-form" for="placeOfIssuance">Nơi cấp</label>
+                            <input type="text" class="m-input-form m-input" name="place-of-issuance" id="placeOfIssuance"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="tienno">
+                        <label class="m-label m-label-form" for="loan">Số tiền nợ</label>
+                        <input type="text" style="text-align: right; padding-right: 12px;" class="m-input-form m-input" name="position" id="loan"/>
+                    </div>
+                </div>
+                <div class="row4">
+                    <div class="company">
+                        <label class="m-label m-label-form" for="company">Công ty</label>
+                        <input type="text" class="m-input-form m-input" name="CustomerCompany" id="company"/>
+                    </div>
+                </div>
+                <div class="row5">
+                    <div class="address">
+                        <label class="m-label m-label-form" for="addressCompany">Địa chỉ</label>
+                        <input type="text" class="m-input-form m-input" name="address" id="addressCompany"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer detail-employee-footer">
+                <div class="footer-left">
+                </div>
+                <div class="footer-right">
+                    <button class="m-button m-button-cancel">Huỷ</button>
+                    <button class="m-button m-button-success btn-success">Cất</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form toast -->
+
+    <!-- Form toast hiển thị khi ta cất bản ghi thành công -->
+    <div class="m-toast add-customer-success" style="display: none;">
+        <div class="m-toast-left">
+            <div class="icon icon-successful"></div>
+            <div class="m-toast-content">Cất bản ghi thành công</div>
+        </div>
+        <div class="m-toast-right">
+            <div class="icon icon-close close-toast-successful"></div>
+        </div>
+    </div>
+
+    <!-- Form toast hiển thị khi ta load dữ liệu api lên thành công -->
+    <div class="m-toast load-data-success" style="display: none;">
+        <div class="m-toast-left">
+            <div class="icon icon-successful"></div>
+            <div class="m-toast-content">Load dữ liệu thành công</div>
+        </div>
+        <div class="m-toast-right">
+            <div class="icon icon-close close-toast-load-data"></div>
+        </div>
+    </div>
+
+
+    <!-- Form toast hiển thị khi ta xoá dữ liệu thành công -->
+    <div class="m-toast delete-data" style="display: none;">
+        <div class="m-toast-left">
+            <div class="icon icon-successful"></div>
+            <div class="m-toast-content">Xoá dữ liệu thành công</div>
+        </div>
+        <div class="m-toast-right">
+            <div class="icon icon-close close-toast-delete"></div>
+        </div>
+    </div>
+
+    <!-- Form dialog xác nhận xoá khách hàng -->
+    <div class="show-dialog dialog-delete-customer" style="display: none;">
+        <div class="dialog">
+            <div class="header-dialog">
+                <div class="header-dialog-title">
+                    Xoá dữ liệu ?
+                </div>
+                <div class="header-dialog-close">
+                    <div class="icon icon-close cancel-delete"></div>
+                </div>
+            </div>
+            <div class="body-dialog">
+                <div class="icon icon-question"></div>
+                <div class="content-dialog">
+                    Bạn có chắc chắn muốn xoá khách hàng này không?
+                </div>
+            </div>
+            <div class="footer-dialog">
+                <div class="dialog-button">
+                    <button class="m-button m-button-cancel cancel-delete">Huỷ</button>
+                    <button class="m-button m-button-success accept-delete accept">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form dialog hiển thị lỗi load api -->
+    <div class="show-dialog dialog-error-api" style="display: none;">
+        <div class="dialog">
+            <div class="header-dialog">
+                <div class="header-dialog-title"></div>
+                <div class="header-dialog-close">
+                    <div class="icon icon-close cancel-delete"></div>
+                </div>
+            </div>
+            <div class="body-dialog">
+                <div class="icon icon-question"></div>
+                <div class="content-dialog"></div>
+            </div>
+            <div class="footer-dialog">
+                <div class="dialog-button">
+                    <button class="m-button m-button-success accept">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading hiển thị khi load dữ liệu -->
+    <div class="m-loading">
+        <div class="icon icon-loading"></div>
+    </div>
+    
+    <script src="/js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/resourse/resoursevn.js"></script>
+
+    <script src="/js/customer/customer.js"></script>
+</body>
+</html>

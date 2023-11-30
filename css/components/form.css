@@ -1,0 +1,71 @@
+/* Phủ phủ màn hình */
+/* .show-employee {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F6F6F6;
+} */
+
+.show-customer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F6F6F6;
+    z-index: 999;
+}
+/* Thiết lập cho form */
+.m-form {
+   border-radius: 4px;
+   min-height: 528px;
+   width: 1300px; 
+   font-size: 14px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #FFFFFF;
+}
+
+/* Thiết lập header form */
+.m-form .form-header {
+    padding: 30px 32px 7px 32px;
+}
+.m-form .form-header .form-title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: notosans-bold;
+    color: #1F1F1F;
+}
+
+/* Thiết lập main form */
+.m-form .form-main {
+    margin: 0 32px 32px 32px;
+}
+
+/* Thiết lập cho label form */
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1F1F1F;
+    font-family: notosans-bold;
+}
+
+/* Thiết lập cho form footer */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+}
+.form-footer .footer-right button {
+    margin-left: 10px;
+}
+
+/* Thiết lập hiển thị bắt buộc nhập */
+.m-form .form-main .required {
+    color: red;
+}

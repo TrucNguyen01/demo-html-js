@@ -1,0 +1,39 @@
+.combobox-icon {
+    position: absolute;
+}
+.m-combobox {
+    height: 36px;
+    min-width: 200px;
+    border-radius: 4px;
+    border: 1px solid #E5E6E6;
+    background: #ffffff;
+    padding-left: 12px;
+    outline: none;
+}
+
+/* Thiết lập cho placeholder combobox */
+.m-combobox::placeholder {
+    font-size: 8px;
+    font-weight: 400;
+    align-items: center;
+    font-size: 14px;
+    color: #9E9E9E;
+}
+/* Thiết lập khi focus vào input */
+.m-combobox:focus {
+    border: 1px solid #50B83C;
+}
+
+/* Thiết lập khi lỗi input */
+.m-combobox-error {
+    border: 1px solid #E61D1D;
+}
+
+.combobox-icon .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    width: 36px;
+    border-left: 1px solid #E5E6E6;
+}

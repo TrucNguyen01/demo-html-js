@@ -1,0 +1,64 @@
+/* Phủ phủ màn hình */
+.show-dialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+/* Thiết lập cho dialog */
+.dialog {
+    min-height: 191px;
+    min-width: 450px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Header dialog */
+.header-dialog {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-dialog .header-dialog-title {
+    font-size: 20px;
+    font-family: notosans-bold;
+    font-weight: 700;
+    color: #1F1F1F;
+}
+
+.body-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Nội dung của dialog */
+.content-dialog {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1F1F1F;
+    width: 88%;
+}
+.body-dialog .icon-question {
+    margin-right: 16px;
+}
+
+.footer-dialog button {
+    font-family: notosans-regular;
+}
+/* Buttom của dialog */
+.footer-dialog .dialog-button {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+.dialog .m-button-cancel {
+    margin-right: 16px;
+}
